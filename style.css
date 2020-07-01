@@ -12,8 +12,9 @@ body{
 #header-section{
     background-image: url("images/header-bg.png");
     background-repeat: no-repeat;
-    height: 700px;
+    height: 650px;
     display: flex;
+    flex-wrap: wrap; 
     background-position: center;
     background-size: cover;
 }
@@ -50,8 +51,9 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 600px;
+    height: 700px;
     display: flex;
+    flex-wrap: wrap; 
 }
 .bio-left{
     width: 45%;
@@ -115,7 +117,7 @@ body{
     color:#919191;
 }
 .contact-section{
-    padding-top: 20px;
+    padding-top: 15px;
     color:#fff;
     margin-top: 50px;
     max-width: 500px;
@@ -124,12 +126,7 @@ body{
     border-radius: 8px;
     text-align: center;
 }
-
-#footer{
-    margin-top: 100px;
-}
-
-/* inputs with type CSS*/
+/* inputs type CSS*/
 input[type=text], textarea {
     width: 80%; 
     padding: 5px; 
@@ -149,4 +146,74 @@ input[type=text], textarea {
     cursor: pointer;
     border: none;
   }
-  
+
+.social-link {
+    text-align: center;
+}
+.social-link h3{
+    margin: 10px auto;
+}
+.social-link a{
+    text-decoration: none;
+    padding: 5px 10px;
+    background-image: linear-gradient(45deg, #EC4C76, tomato);
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+#footer{
+    margin-top: 40px;
+}
+
+  /* Responsive Design */
+  @media only screen and (max-width: 768px) {
+    #header-section{
+        height: 500px;
+    }
+    .header-right{
+       margin-top: 120px;
+    }
+    .work-container{
+        flex-wrap: wrap;
+    }
+    .latest-work{
+        flex-basis: 70%;
+        max-width: 350px;
+       
+    }
+    #mywork-section{
+        padding-bottom: 20px;
+    }
+    #mywork-section h2{
+        margin-bottom: 20px;
+    }
+  }
+  @media screen and (max-width: 699px) {
+    .mywork{
+        height: 800px;
+    }
+    #header-section{
+        height: 900px;
+        justify-content: center;
+    }
+    .header-left{
+        width:70%;
+        margin-top: 100px;
+    }
+    .header-right{
+        width: 70%;
+        margin-top: 50px;
+    }
+    #biograpy-section{
+       justify-content: center;
+       height: 900px;
+    }
+    .bio-left{
+        width: 70%;
+    }
+    .bio-right{
+        width: 70%;
+        margin-top: 0px;
+    }
+  }
