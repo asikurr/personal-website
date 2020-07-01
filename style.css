@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+p{
+    line-height: 28px;
+}
+body{
+    font-family: 'Roboto Condensed', sans-serif;;
+}
+/* Header Section CSS*/
+#header-section{
+    background-image: url("images/header-bg.png");
+    background-repeat: no-repeat;
+    height: 700px;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+}
+.header-left{
+    width:45%;
+    margin-left: 9%;
+    margin-top: 140px;
+}
+.header-left h1{
+    font-size: 38px;
+    color:#EC4C7A;
+    margin: 10px 0px 20px 0px;
+}
+.header-left p{
+    padding-bottom: 20px;
+}
+.header-left a{
+   text-decoration: none;
+   padding: 10px 15px;
+   background-image: linear-gradient(45deg, #EC4C76, tomato);
+   color: #fff;
+   font-weight: 500;
+   border-radius: 5px;
+}
+.header-right{
+    width:45%
+}
+.header-right img{
+    width: 100%;
+}
+/* Biographi Section CSS */
+#biograpy-section{
+    background-image: url("images/biography-bg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+}
+.bio-left{
+    width: 45%;
+}
+.bio-left img{
+    width: 100%;
+    height: 100%;
+}
+.bio-right{
+    width: 45%;
+}
+/* My Latest Work CSS */
+
+#mywork-section h2{
+    width: 150px;
+    margin: 40px auto 0px auto;
+}
+.mywork{
+    background-image: url("images/latest-work-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+
+}
+.work-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.latest-work{
+    flex-basis: 30%;
+}
+.latest-work img{
+    width: 100%;
+}
+
+/* Footer CSS */
+#footer-section{
+    background-image: url("images/footer-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.client-section{
+    text-align: center;
+    margin-top: 50px;
+}
+.clients{
+    margin-top: 50px;
+    max-width: 500px;
+}
+.clients h4{
+    margin-bottom: 20px;
+    font-weight: 300;
+    color:#919191;
+}
+.contact-section{
+    padding-top: 20px;
+    color:#fff;
+    margin-top: 50px;
+    max-width: 500px;
+    height: 225px;
+    background-image: linear-gradient(45deg, #EC5298, #ED4B6D);
+    border-radius: 8px;
+    text-align: center;
+}
+
+#footer{
+    margin-top: 100px;
+}
+
+/* inputs with type CSS*/
+input[type=text], textarea {
+    width: 80%; 
+    padding: 5px; 
+    border: 1px solid tomato; 
+    border-radius: 4px; 
+    box-sizing: border-box;
+    margin-top: 3px; 
+    margin-bottom: 5px; 
+  }
+  
+  input[type=submit] {
+    padding: 10px 15px;
+    background-image: linear-gradient(45deg, #FFCE18, #FFA231);
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+  }
+  
